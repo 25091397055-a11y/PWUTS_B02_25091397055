@@ -1,0 +1,30 @@
+<h2>Katalog alat</h2>
+<p class="sub">Cari alat, lihat stok, lalu pilih Pinjam untuk membuka formulir. Di bawah ada simulasi alur peminjaman.</p>
+<div class="tools">
+ <input id="cari" type="search" placeholder="Cari nama alat, misalnya HDMI" aria-label="Cari alat">
+ <select id="urut" aria-label="Urutkan"><option value="">Urutan awal</option><option value="stok">Stok terbanyak</option><option value="nama">Nama A–Z</option></select>
+</div>
+<div class="grid" id="grid"></div>
+<section class="sim">
+ <div class="card f">
+  <h2>Simulasi peminjaman</h2>
+  <p class="sub">Coba berapa alat yang bisa dipinjam dan lihat stok berubah di tiap tahap.</p>
+  <label for="simAlat">Alat</label><select id="simAlat"></select>
+  <div class="row">
+   <div><label for="simJml">Jumlah</label><input id="simJml" type="number" min="1" value="1"></div>
+   <div><label for="simTgl">Tanggal pinjam</label><input id="simTgl" type="date"></div>
+  </div>
+  <ul class="res">
+   <li><span>Batas durasi</span><b id="simMaks"></b></li>
+   <li><span>Kembali paling lambat</span><b id="simKembali"></b></li>
+   <li><span>Sisa stok jika dipinjam</span><b id="simSisa"></b></li>
+  </ul>
+  <div id="simMsg" class="msg"></div>
+ </div>
+ <div class="card">
+  <h2>Alur status</h2>
+  <p class="sub">Stok berkurang saat Dipinjam dan kembali saat Dikembalikan.</p>
+  <ol class="alur" id="simAlur"><li>Menunggu Review</li><li>Pengecekan Barang</li><li>Siap Diambil</li><li>Dipinjam</li><li>Dikembalikan</li></ol>
+  <p><button class="btn gold" id="simRun">Jalankan simulasi</button> <button class="btn ghost" id="simReset">Atur ulang</button></p>
+ </div>
+</section>
