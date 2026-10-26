@@ -1,12 +1,12 @@
 # PinjamAlat – Sistem Peminjaman Alat Pendukung Praktikum dan Mata Kuliah
 
-UTS Pemrograman Web 2025B – Kelompok 2 (Prodi Manajemen Informatika, UNESA).
+UTS Pemrograman Web, D4 Manajemen Informatika 2025
 
 Nama: Prahma Agis Shevina 
 
 NIM: 25091397055
 
-Mengacu pada dokumen SRS kelompok (alat, stok awal, batas durasi, field form, dan status peminjaman).
+Kelompok 2 (2025B), proposal "Sistem Peminjaman Alat Pendukung Praktikum dan Mata Kuliah”
 
 ## Cara menjalankan
 Ajax (`$.load`) dan form POST butuh server HTTP, jadi jangan buka dengan klik ganda.
