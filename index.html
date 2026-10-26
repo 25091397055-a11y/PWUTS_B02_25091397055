@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PinjamAlat – Peminjaman Alat Pendukung Praktikum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <a class="brand" href="#beranda" data-page="beranda">◈ Pinjam<span>Alat</span></a>
+  <button id="menuBtn" aria-label="Buka menu">☰</button>
+  <nav id="nav" aria-label="Menu utama">
+   <a href="#beranda" data-page="beranda" class="aktif">Beranda</a>
+   <a href="#katalog" data-page="katalog">Katalog &amp; Simulasi</a>
+   <a href="#pengajuan" data-page="pengajuan">Ajukan Peminjaman</a>
+  </nav>
+ </div>
+</header>
+
+<main class="wrap">
+ <div id="content">
+  <section class="hero">
+   <div>
+    <h1>Pinjam kabel, proyektor, dan HDD tanpa catatan manual.</h1>
+    <p>Sistem peminjaman alat pendukung praktikum dan mata kuliah Prodi Manajemen Informatika Angkatan 2025. Cek stok, ajukan peminjaman, dan pantau statusnya dalam satu tempat.</p>
+    <p><a class="btn gold" href="#katalog" data-page="katalog">Lihat katalog alat</a>
+       <a class="btn ghost" href="#pengajuan" data-page="pengajuan">Ajukan peminjaman</a></p>
+   </div>
+   <img src="img/hero.svg" alt="Ilustrasi katalog dan status peminjaman alat">
+  </section>
+
+  <section class="feat">
+   <div class="card"><h3>Stok terlihat langsung</h3><p>Mahasiswa melihat jumlah alat tersedia sebelum mengajukan, sehingga pengajuan tidak sia-sia.</p></div>
+   <div class="card"><h3>Alur persetujuan jelas</h3><p>Admin Lab menyetujui atau menolak, lalu mengecek barang secara fisik sebelum serah terima.</p></div>
+   <div class="card"><h3>Riwayat tercatat</h3><p>Pengambilan, pengembalian, dan keterlambatan tercatat sehingga mudah ditelusuri.</p></div>
+  </section>
+
+  <section>
+   <h2>Alat yang bisa dipinjam</h2>
+   <p class="sub">Kategori Peralatan Pendukung Praktikum. Proyektor maksimal 1 hari, alat lain 3 hari.</p>
+   <div class="grid" id="homeGrid"></div>
+  </section>
+
+  <section style="margin-top:40px">
+   <h2>Status peminjaman</h2>
+   <p class="sub">Tahapan yang dilalui setiap pengajuan.</p>
+   <ol class="alur">
+    <li>Menunggu Review</li><li>Pengecekan Barang</li><li>Siap Diambil</li><li>Dipinjam</li><li>Dikembalikan</li>
+   </ol>
+   <p class="hint">Pengajuan juga bisa berakhir sebagai Ditolak, Dibatalkan, atau Terlambat.</p>
+  </section>
+ </div>
+</main>
+
+<footer><div class="wrap">Pemrograman Web 2025B · Kelompok 2 · Prahma Agis Shevina (25091397055)<br>Prodi Manajemen Informatika, Fakultas Vokasi, Universitas Negeri Surabaya</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/sistem.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

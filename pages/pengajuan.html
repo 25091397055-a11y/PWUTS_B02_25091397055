@@ -1,0 +1,25 @@
+<h2>Ajukan peminjaman</h2>
+<p class="sub">Isi semua kolom. Pengajuan akan masuk ke Admin Lab dengan status Menunggu Review.</p>
+<form id="formAjuan" class="card f" novalidate style="max-width:720px">
+ <div class="row">
+  <div><label for="nama">Nama</label><input id="nama" name="nama" autocomplete="name"><p class="err" id="e_nama"></p></div>
+  <div><label for="nim">NIM</label><input id="nim" name="nim" inputmode="numeric" maxlength="11"><p class="err" id="e_nim"></p></div>
+ </div>
+ <label for="alat">Alat</label><select id="alat" name="alat"><option value="">Pilih alat</option></select>
+ <p class="hint" id="infoAlat"></p><p class="err" id="e_alat"></p>
+ <div class="row">
+  <div><label for="jumlah">Jumlah</label><input id="jumlah" name="jumlah" type="number" min="1"><p class="err" id="e_jumlah"></p></div>
+  <div><label for="kelas">Kelas</label>
+   <select id="kelas" name="kelas"><option value="">Pilih kelas</option><option>A</option><option>B</option><option>C</option><option>D</option><option>I</option></select><p class="err" id="e_kelas"></p></div>
+ </div>
+ <div class="row">
+  <div><label for="tglPinjam">Tanggal pinjam</label><input id="tglPinjam" name="tglPinjam" type="date"><p class="err" id="e_tglPinjam"></p></div>
+  <div><label for="tglKembali">Tanggal kembali</label><input id="tglKembali" name="tglKembali" type="date"><p class="err" id="e_tglKembali"></p></div>
+ </div>
+ <label for="prodi">Prodi</label><input id="prodi" name="prodi" value="Manajemen Informatika"><p class="err" id="e_prodi"></p>
+ <label for="matkul">Mata kuliah</label><input id="matkul" name="matkul"><p class="err" id="e_matkul"></p>
+ <label for="dosen">Dosen pengampu</label><input id="dosen" name="dosen"><p class="err" id="e_dosen"></p>
+ <label for="keperluan">Keperluan</label><textarea id="keperluan" name="keperluan" rows="3"></textarea><p class="err" id="e_keperluan"></p>
+ <p><button type="submit" class="btn" id="kirim">Kirim pengajuan</button> <a class="btn ghost" href="#katalog" data-page="katalog">Batal</a></p>
+ <div id="hasil" role="status"></div>
+</form>
