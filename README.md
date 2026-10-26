@@ -1,4 +1,4 @@
-# PinjamAlat – Sistem Peminjaman Alat Pendukung Praktikum dan Mata Kuliah
+# Sistem Peminjaman Alat Pendukung Praktikum dan Mata Kuliah
 
 UTS Pemrograman Web, D4 Manajemen Informatika 2025
 
