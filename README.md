@@ -1,6 +1,8 @@
 # PinjamAlat – Sistem Peminjaman Alat Pendukung Praktikum dan Mata Kuliah
+
 UTS Pemrograman Web 2025B – Kelompok 2 (Prodi Manajemen Informatika, UNESA).
-Pembuat: Prahma Agis Shevina (NIM 25091397055)
+Nama: Prahma Agis Shevina 
+NIM: 25091397055
 Mengacu pada dokumen SRS kelompok (alat, stok awal, batas durasi, field form, dan status peminjaman).
 
 ## Cara menjalankan
